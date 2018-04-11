@@ -1,0 +1,15 @@
+root: xian.mybatisenum
+spring:
+  datasource:
+    url: jdbc:mysql://xiaoxian.site:3306/forum?useSSL=false
+    username: root
+    password: 25htLMm!b
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: ${root}.entity
+  type-enums-package: ${root}.entity.enums
+  global-config:
+    refresh-mapper: true
+    id-type: 0
+    field-strategy: 0
